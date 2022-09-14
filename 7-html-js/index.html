@@ -1,0 +1,16 @@
+<input id="name-input" type="text" placeholder="Enter your name" />
+<button id="my-button">Click Me</button>
+
+<script>
+    //declaration of interactive button and an input field where the name is written
+    var myButton = document.querySelector('#my-button');
+    var nameInput = document.querySelector('#name-input');
+
+    //Add an event listner that detect if the button is clicked
+    myButton.addEventListener('click', function () {
+        //Print a greeting message to the name enterred if the content is not an empty string. Print it as a pop-up alert message.
+        if (nameInput.value !== '') {
+        alert('Hello ' + nameInput.value);
+        }
+    });
+</script>
